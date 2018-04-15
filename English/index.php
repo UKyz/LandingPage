@@ -1,3 +1,60 @@
+<?php
+
+	function send_mail() {
+
+		$mail = 'fqbg.victor@icloud.com'; // Déclaration de l'adresse de destination.
+		if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
+		{
+			$passage_ligne = "\r\n";
+		}
+		else
+		{
+			$passage_ligne = "\n";
+		}
+		//=====Déclaration des messages au format texte et au format HTML.
+		//$message_txt = "Salut à tous, voici un e-mail envoyé par un script PHP.";
+		$message_txt = "Un nouveau message a été envoyé depuis votre CV en ligne par le contact : \"" . $_POST['name'] . "\" ( " . $_POST['email'] . "). Le message est le suivant : \"" . $_POST['message'] . "\"";
+
+
+		//==========
+		 
+		//=====Création de la boundary
+		$boundary = "-----=".md5(rand());
+		//==========
+		 
+		//=====Définition du sujet.
+		$sujet = "Nouveau message sur votre site";
+		//=========
+		 
+		//=====Création du header de l'e-mail.
+		$header = "From: <" . $_POST['email'] . ">".$passage_ligne;
+		$header.= "Reply-to: <" . $_POST['email'] . ">".$passage_ligne;
+		$header.= "MIME-Version: 1.0".$passage_ligne;
+		$header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
+		//==========
+
+		$message = $passage_ligne."--".$boundary.$passage_ligne;
+		//=====Ajout du message au format HTML
+		$message.= "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
+		$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+		$message.= $passage_ligne.$message_txt.$passage_ligne;
+		//==========
+		$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
+		$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
+		//==========
+		 
+		//=====Envoi de l'e-mail.
+		mail($mail,utf8_decode($sujet),utf8_decode($message),$header);
+		//==========
+	}
+
+	if (isset($_POST['email']) and isset($_POST['name']) and isset($_POST['message'])) {
+		send_mail();
+		echo "<script>alert(\"Your message has been succesfully send.\")</script>";
+	}
+
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Hyperspace by HTML5 UP
@@ -40,6 +97,7 @@
 							<p>Here it is my landing page, here I present myself<br />
 							and show you what I like and what I like to do.</p>
 							<ul class="actions">
+								<li><a href="../French/" class="button">Passer en Français</a></li>
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
 						</div>
@@ -88,38 +146,28 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>What I do</h2>
+							<p>Apart from sports, I lovet to code and this hobby is a big part from my free time. But I am also a big fan of series, board games and video games.</p>
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<h3>Programming</h3>
+									<p>I know programmming in different languages as C++, JAVA, HTML-CSS-PHP, Python, Qt, Android ...</p>
 								</section>
 								<section>
-									<span class="icon major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<span class="icon major fa-unlock-alt"></span>
+									<h3>Learning</h3>
+									<p>Even if I do not know something, I am always enthusiastic to learn something new and earn new skills.</p>
 								</section>
 								<section>
-									<span class="icon major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<span class="icon major fa-globe"></span>
+									<h3>Discovering</h3>
+									<p>I had the chance to discover and live in Irland while a semester. I discover a new culture et I was glad to share this culture. And obviously, this semester help me to improuve my english.</p>
 								</section>
 								<section>
-									<span class="icon major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-chain"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-diamond"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+									<span class="icon major fa-play"></span>
+									<h3>Diverting</h3>
+									<p>Influenced by a strong geek culture, I am a big fan of series and games. I have the competition spirit and I always want to win every game that I play. </p>
 								</section>
 							</div>
 							<ul class="actions">
@@ -132,7 +180,7 @@
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p>You can contact me by whatever means of communications, you can also send me a message directly by this page right under this. If you have any questions please don't be shy and ask me, I will respond.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
@@ -157,20 +205,20 @@
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
+											<span>1 Avenue du Général Leclerc<br />
+											Vitry-sur-Seine, 94400<br />
+											France</span>
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
+											<span>fqbg.victor@icloud.com</span>
 										</li>
 										<li>
 											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
+											<span>(+33) 6 70 77 76 33</span>
 										</li>
 										<li>
-											<h3>Social</h3>
+											<h3>Socials Networks</h3>
 											<ul class="icons">
 												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
 												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
@@ -191,7 +239,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Untitled. All rights reserved.</li><li>Changer pour : <a href="../French/">Français</a></li>
 					</ul>
 				</div>
 			</footer>

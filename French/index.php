@@ -1,3 +1,60 @@
+<?php 
+
+	function send_mail() {
+
+		$mail = 'fqbg.victor@icloud.com'; // Déclaration de l'adresse de destination.
+		if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
+		{
+			$passage_ligne = "\r\n";
+		}
+		else
+		{
+			$passage_ligne = "\n";
+		}
+		//=====Déclaration des messages au format texte et au format HTML.
+		//$message_txt = "Salut à tous, voici un e-mail envoyé par un script PHP.";
+		$message_txt = "Un nouveau message a été envoyé depuis votre CV en ligne par le contact : \"" . $_POST['name'] . "\" ( " . $_POST['email'] . "). Le message est le suivant : \"" . $_POST['message'] . "\"";
+
+
+		//==========
+		 
+		//=====Création de la boundary
+		$boundary = "-----=".md5(rand());
+		//==========
+		 
+		//=====Définition du sujet.
+		$sujet = "Nouveau message sur votre site";
+		//=========
+		 
+		//=====Création du header de l'e-mail.
+		$header = "From: <" . $_POST['email'] . ">".$passage_ligne;
+		$header.= "Reply-to: <" . $_POST['email'] . ">".$passage_ligne;
+		$header.= "MIME-Version: 1.0".$passage_ligne;
+		$header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
+		//==========
+
+		$message = $passage_ligne."--".$boundary.$passage_ligne;
+		//=====Ajout du message au format HTML
+		$message.= "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
+		$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+		$message.= $passage_ligne.$message_txt.$passage_ligne;
+		//==========
+		$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
+		$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
+		//==========
+		 
+		//=====Envoi de l'e-mail.
+		mail($mail,utf8_decode($sujet),utf8_decode($message),$header);
+		//==========
+	}
+
+	if (isset($_POST['email']) and isset($_POST['name']) and isset($_POST['message'])) {
+		send_mail();
+		echo "<script>alert(\"Votre message a bien été envoyé.\")</script>";
+	}
+
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Hyperspace by HTML5 UP
@@ -41,6 +98,7 @@
 							<p>Voici mon CV en ligne, ici je me présente<br />
 							et vous montre ce que fait et ce qui me passionne.</p>
 							<ul class="actions">
+								<li><a href="../English/" class="button">Switch in English</a></li>
 								<li><a href="#one" class="button scrolly">En savoir plus</a></li>
 							</ul>
 						</div>
@@ -147,7 +205,7 @@
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Address</h3>
+											<h3>Addresse</h3>
 											<span>1 Avenue du Général Leclerc<br />
 											Vitry-sur-Seine, 94400<br />
 											France</span>
@@ -157,11 +215,11 @@
 											<span>fqbg.victor@icloud.com</span>
 										</li>
 										<li>
-											<h3>Phone</h3>
+											<h3>Téléphone</h3>
 											<span>(+33) 6 70 77 76 33</span>
 										</li>
 										<li>
-											<h3>Social</h3>
+											<h3>Réseaux sociaux</h3>
 											<ul class="icons">
 												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
 												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
@@ -182,7 +240,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Fauquembergue Victor. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Fauquembergue Victor. All rights reserved.</li><li>Switch in : <a href="../English/">English</a></li>
 					</ul>
 				</div>
 			</footer>
