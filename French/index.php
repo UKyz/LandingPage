@@ -221,11 +221,11 @@
 										<li>
 											<h3>Réseaux sociaux</h3>
 											<ul class="icons">
-												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://twitter.com/UKyzFR" class="fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="https://www.facebook.com/victor.fauquembergue.52" class="fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a href="https://github.com/UKyz" class="fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.instagram.com/ukyzfr/" class="fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="https://fr.linkedin.com/in/victor-fauquembergue-710253159" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
@@ -240,7 +240,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Fauquembergue Victor. All rights reserved.</li><li>Switch in : <a href="../English/">English</a></li>
+						<li>&copy; Fauquembergue Victor. Tous droits reservés.</li><li>Switch in : <a href="../English/">English</a></li>
 					</ul>
 				</div>
 			</footer>

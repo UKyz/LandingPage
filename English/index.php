@@ -63,7 +63,7 @@
 -->
 <html>
 	<head>
-		<title>Fqbg Victor Resume</title>
+		<title>Victor Resume</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -220,11 +220,11 @@
 										<li>
 											<h3>Socials Networks</h3>
 											<ul class="icons">
-												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://twitter.com/UKyzFR" class="fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="https://www.facebook.com/victor.fauquembergue.52" class="fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a href="https://github.com/UKyz" class="fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.instagram.com/ukyzfr/" class="fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="https://fr.linkedin.com/in/victor-fauquembergue-710253159" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
