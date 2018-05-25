@@ -2563,7 +2563,7 @@
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #bed4ff;
+					color: /*#bed4ff;*/ #d35058;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
@@ -2575,7 +2575,7 @@
 				}
 
 				.wrapper.style2-alt .icon.major:before {
-					color: #3e4094;
+					color: /*#3e4094*/ #277c6b;
 				}
 
 				.wrapper.style3 .icon.major:before {
@@ -3253,7 +3253,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: /*#5e42a6;*/ #d35058;
 		}
 
 		.wrapper.style1-alt {
@@ -3265,7 +3265,7 @@
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: /*#3e4094*/ #277c6b;
 		}
 
 		.wrapper.style3 {

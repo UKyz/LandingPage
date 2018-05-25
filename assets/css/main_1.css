@@ -2563,11 +2563,11 @@
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #bed4ff;
+					color: /*#bed4ff;*/ #24d7fd;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #493382;
+					color: /*#493382;*/ #24d7fd;
 				}
 
 				.wrapper.style2 .icon.major:before {
