@@ -94,7 +94,7 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Fauquembergue Victor</h1>
-							<p>Here is my landing page, I present myself.<br />
+							<p>Here is my landing page, I present myself,<br />
 							I show you who I am and what I like to do.</p>
 							<ul class="actions">
 								<li><a href="../French/" class="button">Passer en Français</a></li>
