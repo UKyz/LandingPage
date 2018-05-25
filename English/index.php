@@ -94,8 +94,8 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Fauquembergue Victor</h1>
-							<p>Here it is my landing page, here I present myself<br />
-							and show you what I like and what I like to do.</p>
+							<p>Here is my landing page, I present myself.<br />
+							I show you who I am and what I like to do.</p>
 							<ul class="actions">
 								<li><a href="../French/" class="button">Passer en Français</a></li>
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
@@ -110,7 +110,7 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Motivated</h2>
-									<p>I am motivated, I always ask myself and try to evolve. I love to learn new things, especially in informatics, and develop new skills.</p>
+									<p>I am motivated, I always ask myself and try to evolve. I love to learn new things, especially in IT, and develop new skills.</p>
 									<ul class="actions">
 										<li><a href="#" class="button">See my cover letter</a></li>
 									</ul>
@@ -122,7 +122,7 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Sportsman</h2>
-									<p>I am sporty, sports is one of my favorite hobbies. I play football (soccer) since my childhood in a team, but I also play others sports with friends or familly. I think this a advantage to have that team spirit to work in company.</p>
+									<p>I am sporty, sports is one of my favorite hobbies. I play football (soccer) since my childhood in team, but I also play others sports with friends or familly. I am pretty sure this is an advantage to have that team spirit to work in company.</p>
 									<ul class="actions">
 										<li><a href="#" class="button">See my cover letter</a></li>
 									</ul>
@@ -147,12 +147,12 @@
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>What I do</h2>
-							<p>Apart from sports, I lovet to code and this hobby is a big part from my free time. But I am also a big fan of series, board games and video games.</p>
+							<p>Apart from sports, I love to code and this hobby is a big part from my free time. But I am also a big fan of series, board games and video games.</p>
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
 									<h3>Programming</h3>
-									<p>I know programmming in different languages as C++, JAVA, HTML-CSS-PHP, Python, Qt, Android ...</p>
+									<p>I know programmming in different languages as C++, JAVA, HTML-CSS-PHP, Python, Qt, Android, JS ...</p>
 								</section>
 								<section>
 									<span class="icon major fa-unlock-alt"></span>
@@ -162,7 +162,7 @@
 								<section>
 									<span class="icon major fa-globe"></span>
 									<h3>Discovering</h3>
-									<p>I had the chance to discover and live in Irland while a semester. I discover a new culture et I was glad to share this culture. And obviously, this semester help me to improuve my english.</p>
+									<p>I had the chance to discover and live in Irland while a semester. I discover a new culture and I was glad to share this culture. And obviously, this semester help me to improuve my english.</p>
 								</section>
 								<section>
 									<span class="icon major fa-play"></span>
