@@ -23,7 +23,7 @@
 					<ul>
 						<li><a href="index.php">Home</a></li>
 						<li><a href="generic.php" class="active">Resume</a></li>
-						<li><a href="elements.html">Cover Letter</a></li>
+						<li><a href="coverLetter.php">Cover Letter</a></li>
 						<li><a href="elements.html">My Work</a></li>
 						<li><a href="elements.html">Get In Touch</a></li>
 					</ul>

@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Resume - Victor</title>
+		<title>Cover Letter - Victor</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -21,11 +21,11 @@
 				<a href="resume.php" class="title">Fauquembergue Victor</a>
 				<nav>
 					<ul>
-						<li><a href="index.php">Accueil</a></li>
-						<li><a href="resume.php" class="active">Curriculum Vitae</a></li>
-						<li><a href="coverLetter.php">Lettre De Motivation</a></li>
-						<li><a href="elements.html">Mon Travail</a></li>
-						<li><a href="elements.html">Contact</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="generic.php">Resume</a></li>
+						<li><a href="coverLetter.php" class="active">Cover Letter</a></li>
+						<li><a href="elements.html">My Work</a></li>
+						<li><a href="elements.html">Get In Touch</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -36,10 +36,15 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Mon CV</h1>
+							<h1 class="major">My Cover Letter</h1>
 							<span class="image fit"><img src="../images/resume.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<p>To Whom It May Concern</p>
+							<p>I am currently in the fourth year in the engineering school ESME Sudria at Ivry-sur-seine. I am looking for a job for the end of my studies in the domain of IT.</p>
+							<p>After my two years of preparatory class I choose the IT cursus in my school. Thanks to the preparatory class I have learned to work in groups on different projects but also to be efficient in my personal work. I had the chance to study one semester in Dublin in an IT class.</p>
+							<p>I have some experience in the domain of web applications, I worked for clients who wanted a new website for their companies. Thanks to this experience I am able to work with your clients.</p>
+							<p>I have practiced football since I was six, I also have a good team spirit I know how to work in a team. I have the capacities to push a group to do things better but also take the helm when it is needed. The school has taught me how to code many languages as well as 3D modelling.</p>
+							<p>Kind regards</p>
+							<p>Victor Fauquembergue</p>
 						</div>
 					</section>
 
@@ -49,7 +54,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Fauquembergue Victor. Tous droits reservés.</li><li>Switch in : <a href="../English/resume.php">English</a></li>
+						<li>&copy; Untitled. All rights reserved.</li><li>Changer pour : <a href="../French/coverLetter.php">Français</a></li>
 					</ul>
 				</div>
 			</footer>

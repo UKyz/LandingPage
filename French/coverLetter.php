@@ -22,8 +22,8 @@
 				<nav>
 					<ul>
 						<li><a href="index.php">Accueil</a></li>
-						<li><a href="resume.php" class="active">Curriculum Vitae</a></li>
-						<li><a href="coverLetter.php">Lettre De Motivation</a></li>
+						<li><a href="resume.php">Curriculum Vitae</a></li>
+						<li><a href="coverLetter.php" class="active">Lettre De Motivation</a></li>
 						<li><a href="elements.html">Mon Travail</a></li>
 						<li><a href="elements.html">Contact</a></li>
 					</ul>
@@ -36,7 +36,7 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Mon CV</h1>
+							<h1 class="major">Ma lettre de motivation</h1>
 							<span class="image fit"><img src="../images/resume.jpg" alt="" /></span>
 							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
 							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
@@ -49,7 +49,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Fauquembergue Victor. Tous droits reservés.</li><li>Switch in : <a href="../English/resume.php">English</a></li>
+						<li>&copy; Fauquembergue Victor. Tous droits reservés.</li><li>Switch in : <a href="../English/coverLetter.php">English</a></li>
 					</ul>
 				</div>
 			</footer>
