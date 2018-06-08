@@ -67,7 +67,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main_3.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
@@ -113,7 +113,7 @@
 									<h2>Motivé</h2>
 									<p>Je suis motivé, je me remet constamment en question pour toujours évoluer. J'adore apprendre de nouvelles choses et acquérir de nouvelles compétences.</p>
 									<ul class="actions">
-										<li><a href="#" class="button">Voir ma lettre de motivation</a></li>
+										<li><a href="coverLetter.php" class="button">Voir ma lettre de motivation</a></li>
 									</ul>
 								</div>
 							</div>
@@ -125,7 +125,7 @@
 									<h2>Sportif</h2>
 									<p>Je suis sportif, le sport est mon loisir favoris. Je joue au football, en club, depuis mon plus jeune âge mais également à d'autres sports entre amis ou en famille. Je pense que c'est un atout d'avoir un esprit d'équipe pour travailler en entreprise.</p>
 									<ul class="actions">
-										<li><a href="#" class="button">Voir ma lettre de motivation</a></li>
+										<li><a href="coverLetter.php" class="button">Voir ma lettre de motivation</a></li>
 									</ul>
 								</div>
 							</div>
@@ -172,13 +172,13 @@
 								</section>
 							</div>
 							<ul class="actions">
-								<li><a href="#" class="button">En savoir plus</a></li>
+								<li><a href="resume.php" class="button">En savoir plus</a></li>
 							</ul>
 						</div>
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+					<section id="three" class="wrapper style2-alt fade-up">
 						<div class="inner">
 							<h2>Restons en contact</h2>
 							<p>Vous pouvez me contacter via n'importe quel moyen de communication, vous pouvez également m'envoyer un message directement depuis ce site avec les petites zones de texte ci-dessous. Si vous avez une question, une demande ou quoi que ce soit, n'hésitez pas.</p>

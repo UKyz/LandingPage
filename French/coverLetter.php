@@ -24,8 +24,8 @@
 						<li><a href="index.php">Accueil</a></li>
 						<li><a href="resume.php">Curriculum Vitae</a></li>
 						<li><a href="coverLetter.php" class="active">Lettre De Motivation</a></li>
-						<li><a href="elements.html">Mon Travail</a></li>
-						<li><a href="elements.html">Contact</a></li>
+						<li><a href="my_work.php">Mon Travail</a></li>
+						<li><a href="contact.php">Contact</a></li>
 					</ul>
 				</nav>
 			</header>

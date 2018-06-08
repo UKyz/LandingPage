@@ -112,7 +112,7 @@
 									<h2>Motivated</h2>
 									<p>I am motivated, I always ask myself and try to evolve. I love to learn new things, especially in IT, and develop new skills.</p>
 									<ul class="actions">
-										<li><a href="#" class="button">See my cover letter</a></li>
+										<li><a href="coverLetter.php" class="button">See my cover letter</a></li>
 									</ul>
 								</div>
 							</div>
@@ -124,7 +124,7 @@
 									<h2>Sportsman</h2>
 									<p>I am sporty, sports is one of my favorite hobbies. I play football (soccer) since my childhood in team, but I also play others sports with friends or familly. I am pretty sure this is an advantage to have that team spirit to work in company.</p>
 									<ul class="actions">
-										<li><a href="#" class="button">See my cover letter</a></li>
+										<li><a href="coverLetter.php" class="button">See my cover letter</a></li>
 									</ul>
 								</div>
 							</div>
@@ -171,7 +171,7 @@
 								</section>
 							</div>
 							<ul class="actions">
-								<li><a href="#" class="button">Learn more</a></li>
+								<li><a href="resume.php" class="button">Learn more</a></li>
 							</ul>
 						</div>
 					</section>

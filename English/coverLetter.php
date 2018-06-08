@@ -24,8 +24,8 @@
 						<li><a href="index.php">Home</a></li>
 						<li><a href="generic.php">Resume</a></li>
 						<li><a href="coverLetter.php" class="active">Cover Letter</a></li>
-						<li><a href="elements.html">My Work</a></li>
-						<li><a href="elements.html">Get In Touch</a></li>
+						<li><a href="my_work.php">My Work</a></li>
+						<li><a href="contact.php">Get In Touch</a></li>
 					</ul>
 				</nav>
 			</header>
