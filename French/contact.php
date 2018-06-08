@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Resume - Victor</title>
+		<title>Restons en Contact - Victor</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -24,7 +24,7 @@
 						<li><a href="index.php">Accueil</a></li>
 						<li><a href="resume.php">Curriculum Vitae</a></li>
 						<li><a href="coverLetter.php">Lettre De Motivation</a></li>
-						<li><a href="my_job.php">Mon Travail</a></li>
+						<li><a href="my_work.php">Mon Travail</a></li>
 						<li><a href="contact.php" class="active">Contact</a></li>
 					</ul>
 				</nav>
