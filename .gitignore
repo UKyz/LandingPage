@@ -1,3 +1,9 @@
+### macOS template
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
 # CakePHP 3
 
 /vendor/*
@@ -27,4 +33,9 @@
 elements.html
 generic.html
 
+# User-specific stuff
 .idea/*
+.idea/**/tasks.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
